@@ -6,16 +6,23 @@
   font-weight: normal;
   font-style: normal;
 }
+.h0{
+	color: #ffffff;
+	font-family: "Raleway", Arial, sans-serif;
+	font-size: 48px;
+	font-style: bold;
+}
 h1{
 	color: #000000;
 	font-family: "Raleway", Arial, sans-serif;
 	font-size: 36px;
 }
+
 .menubar{
 	position: fixed;
 	top: 0%;
 	left: 0%;
-	height:  100px;
+	height:  110px;
     width: 100%;
 
 	background-color: #003366;
@@ -25,8 +32,22 @@ h1{
     font-family: "Raleway", Arial, sans-serif;
     font-weight: 400;
     margin: 0 0 30px 0;
-    box-shadow: 0px 0px 30px #000000;
+    box-shadow: 0px 0px 20px #000000;
+
+    transition: all 0.2s ease-in-out;
 }
+.menubar:hover{
+	box-shadow: 0px 0px 50px #000000;
+}
+.menu-button{
+	color: #ffffff;
+	font-family: "Raleway", Arial, sans-serif;
+	font-size: 24px;
+}
+.nav-bar{
+	
+}
+
 .service-list{
 	color: #ffffff;
 	box-shadow: 3px 3px 10px #999999;
