@@ -1,82 +1,168 @@
 @charset "utf-8";
 @font-face {
-  font-family: 'icomoon';
-  src: url("../fonts/icomoon/icomoon.eot?srf3rx");
-  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'icomoon';
+	src: url("../fonts/icomoon/icomoon.eot?srf3rx");
+	src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+	font-weight: normal;
+	font-style: normal;
 }
-.h0{
-	color: #ffffff;
-	font-family: "Raleway", Arial, sans-serif;
-	font-size: 48px;
-	font-style: bold;
+@font-face {
+	font-family: 'Roboto-thin';
+	src: url(resource/font/Roboto-Thin.ttf);
 }
-h1{
-	color: #000000;
-	font-family: "Raleway", Arial, sans-serif;
+@font-face {
+	font-family: 'Roboto-light';
+	src: url(resource/font/Roboto-Light.ttf);
+}
+@font-face {
+	font-family: 'Roboto-regular';
+	src: url(resource/font/Roboto-Regular.ttf);
+}
+@font-face {
+	font-family: 'Roboto-bold';
+	src: url(resource/font/Roboto-Black.ttf)
+}
+body {
+	background-color : #161616;
+}
+h1 {
+	color: #8A8A8A;
+	font-family: "Roboto-thin";
 	font-size: 36px;
+	letter-spacing: 8px;
+	margin: 8px;
 }
-a{
-	text-decoration: none; 
+h2 {
+	color: #DCDCDC;
+	font-family: "Roboto-thin";
+	font-size: 30px;
+	letter-spacing: 6px;
 }
-a:hover{
-	color: #555555;	
+p {
+	color: #8C8C8C;
+	font-family: "Roboto-light";
+	font-size: 18px;
+	margin: 0px;
 }
-a:visited{
-	color: #ffffff;
+a {
+	text-decoration: none;
 }
-.menubar{
-	position: fixed;
-	top: 0%;
-	left: 0%;
-	height:  110px;
-    width: 100%;
-
-	background-color: #003366;
-
-	
-    color: #000;
-    font-family: "Raleway", Arial, sans-serif;
-    font-weight: 400;
-    margin: 0 0 30px 0;
-    transition: all 0.2s ease-in-out;
+.block {
+	display: inline-block;
+	width: 500px;
+	height: 500px;
+	opacity: 1.0;
+	margin: 0px;
 }
-.menubar:hover{
-	box-shadow: 0px 0px 50px #000000;
+.menu {
+	width: 500px;
+	height: 500px;
+	opacity: 1.0;
+	transition: all 0.4s ease-in-out;
 }
-.menu-button{
-	color: #ffffff;
-	font-family: "Raleway", Arial, sans-serif;
-	font-size: 16px;
-
-	margin-top: 0px;
-	padding-top: 0px;
-	margin-bottom: 0px;
-	padding-bottom: 0px;
+.menu:hover {
+	opacity: 0;
 }
-
-.service-list{
-	color: #ffffff;
-	box-shadow: 3px 3px 10px #999999;
+.news {
+	width: 400px;
+	margin_left: 20px;
+	margin-right: 20px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	vertical-align: top;
+	display: inline-block;
+	opacity: 0.7;
+	transition: opacity 0.3s ease-in-out;
+}
+.news-title {
+	color: #BDBDBD;
+	letter-spacing: 2px;
+	font-size: 22px;
+	pointer-events: none;
+}
+img.news {
+	pointer-events: none;
+	object-fit: cover;
+	width: 400px;
 	height: 250px;
+}
+.news-content {
+	pointer-events: none;
+	color: #ACACAC;
+	letter-spacing: 0px;
+	margin-top: 0px;
+}
+.news:hover {
+	opacity: 1;
+}
+.service-bg {
+	width: 1000px;
+	height: 100px;
+	object-fit: cover;
+	transition: all 0.3s ease-in-out;
+}
+.service-bg:hover {
+	height: 350px;
+}
+.service {
+	pointer-events: none;
 	width: 100%;
-	margin-bottom: 40px;
+	height: 100%;
+	object-fit: cover;
+	opacity: 1;
+}
+.service-bg:hover ~ service {
+	opacity: 0.4;
+}
+td.table-header {
+	width: 200px;
+	text-align: center;
+	opacity: 0.8;
+}
+td.table-content {
+	width: 200px;
+	text-align: center;
+	opacity: 1;
+}
+tr.table-header {
+	height: 30px;
+}
+h3 {
+	font-family: "Roboto-regular";
+	font-weight: normal;
+	font-size: 20px;
+	color: #CDCDCD;
+}
+.table-header-long {
+	width: 500px;
+	text-align: center;
+	opacity: 0.8;
+}
+.table-increase {
+	color: #5FFF8A;
+}
+.table-decrease {
+	color: #FF5558;
+}
+.table-row {
+	background-color: rgba(47,47,47,0.00);
 	transition: all 0.2s ease-in-out;
 }
-.service-list:hover{
-	box-shadow: 3px 3px 30px #999999;
+.table-row:hover{
+	background-color: rgba(47,47,47,1.00);
 }
-.service-title{
-	color: #000000;
-	font-family: "Raleway", Arial, sans-serif;
-	font-size: 24px;
+.inspector{
+	width: 400px;
+	height: 100%;
+	right: 0%;
+	top: 0%;
+	position: fixed;
+	transition: all 0.5s ease-in-out;
+	transform: translate(80%,0%);
+	opacity: 0.6;
+	
+	background-color: rgba(58,58,58,1.00);
 }
-.service-detail{
-	color: #000000;
-	font-family: "Raleway", Arial, sans-serif;
-	font-size: 16px; 
+.inspector:hover{
+	transform: translate(0%,0%);
 }
-
-/* CSS Document */
-
